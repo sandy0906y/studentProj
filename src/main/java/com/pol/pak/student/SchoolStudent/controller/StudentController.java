@@ -19,7 +19,7 @@ public class StudentController {
 	
 	@PostMapping("/saveDet")
 	public StudentBaseDetailsRes saveStudentDetails(@RequestBody StudentBaseDetailsReq req) {
-		
+		System.out.println("Enter in Controller");
 		
 		return studentSave.saveStudentDetails(req);
 		
